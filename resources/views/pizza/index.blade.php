@@ -6,7 +6,7 @@
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">All Pizza
-                    <a href="{{route('pizza.create)}}"> <button class="btn btn-success" style="float: right">Add Pizza</button>
+                    <a href="{{route('pizza.create')}}"> <button class="btn btn-success" style="float: right">Add Pizza</button>
                     </a>
                 </div>
 

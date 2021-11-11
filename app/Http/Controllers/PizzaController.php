@@ -70,7 +70,7 @@ class PizzaController extends Controller
      */
     public function edit($id)
     {
-        // dd($id);
+        //dd($id);
         $pizza = Pizza::find($id);
         return view('pizza.edit',compact('pizza'));
     }
@@ -89,7 +89,7 @@ class PizzaController extends Controller
             $path = $request->image->store('public/pizza');
 
         }else{
-            $path = $request->image;
+            $path = $pizza->image;
         }
         $pizza = new Pizza;
         $pizza->name = $request->name;
